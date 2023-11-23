@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style type="text/css">
+        body{
+            background-image: url(task1.jpg);
+            background-size: 1700px;
+            background-repeat: no-repeat;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+           
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(rgba(157, 71, 71, 0.8),rgba(23, 17, 17, 0.2)),url("Background.jpg");
+            
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+          
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+
+        }
+        .Menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .Menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid orange;
+            transition: 0.4s linear;
+        }
+
+        .Menu a:hover:before{
+            width: 90%;
+        }
+
+        .Register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: orange;
+            border-radius: 5px;
+            transition: 0.4s linear;
+        }
+
+        .Register a:hover{
+            background: transparent;
+            border: 1px solid red;
+        }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+
+        .h-txt h1{
+            font-size: 3.5em;
+        }
+
+        .h-txt a{
+            text-decoration: none;
+            background: orange;
+            color: white;
+            padding: 20px,25px;
+            letter-spacing: 5px;
+            transition: 0.4s linear;
+        }
+        .h-txt a:hover{
+        background: transparent;
+            border: 1px solid red;
+        }
+       .wo{
+        max-width: 650px;
+            position: absolute;
+            top: 83%;
+            left: 44%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: rgb(255, 255, 255);
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <b><i>Codsoft</i></b>
+                <p>Code.Create.Succeed</p>
+            </div>
+            <div class="Menu">
+                <a href="#"><b>Home</b></a>
+                <a href="#"><b>Internships</b></a>
+                <a href="#"><b>Jobs</b></a>
+                <a href="#"><b>Contact Us</b></a>
+            </div>
+            <div class="Register">
+                <a href="#">Apply</a>
+            </div>
+        </nav>
+        
+        <section class="h-txt">
+            <span><b><h3>Take Your Career to the Next Level with CodSoft</h3></b></span>
+            <br>
+            <br>
+            <br>
+            <h1><b>ABOUT US</b></h1>
+            <p><b>CodSoft</b> are IT services and IT consultancy  that specializes in creating innovative solutions for businesses. We are passionate about technology and believe in the power of software to transform the world. Our internship program is just one of the ways in which we are investing in the future of the industry.
+
+                At CodSoft, we believe practical knowledge is the key to success in the tech industry. Our aim is to help students lacking basic skills by offering hands-on learning through live projects and real-world examples. </p>
+            <br>
+            <a href="#"><b>Join Our Exciting Internship Journey</b></a>
+            <br><br><br><br><br>
+            </section>
+            <section class="wo">
+            <table border="1" width="900">
+                <tr>
+                    <th>We build websites and web applications.</th>
+                    <th>E-commerce development.</th>
+                    <th>Need website for your business?</th>
+                </tr>
+                <tr>
+                    <td>Today, every business should have a website.
+
+                        No matter how small or large your business, having a website is must have at this time.
+                        
+                        Having a website help you to maintain your online presence.</td>
+                        
+                    <td>Our talented web development team has years of experience building websites from small to large.
+
+                        We deliver projects with 100% user satisfaction.
+                        
+                        Whatever functionality you need for the web, we will implement it.</td>
+                    <td>Want to sell your products online?
+
+                        We often develop Ecommerce for businesses who want to sell their products or services online.
+                        
+                        Let's move your products towards online...</td>
+                </tr>
+                
+            </table>
+            <br>
+            <table width="950">
+                <tr>
+                    <td> <div class="Register">
+                        <a href="#">Contact Us</a>
+                    </div></td>
+                    <td> <div class="Register">
+                        <a href="#">Contact Us</a>
+                    </div></td>
+                    <td> <div class="Register">
+                        <a href="#">Contact Us</a>
+                    </div></td>
+                </tr>
+            </table>
+        </section>
+       
+</header>   
+</body>
+</html>
